@@ -1,0 +1,55 @@
+#📘 Interview Questions & Answers
+
+1. What does SELECT * do?
+Answer: SELECT * retrieves all the columns from a table.
+Example:  SELECT * FROM Employees;
+
+2. How do you filter rows?
+Answer: Use the WHERE clause to filter data based on a condition.
+Example: SELECT * FROM Employees WHERE department = 'IT';
+
+3. What is LIKE '%value%'?
+Answer: LIKE is used for pattern matching in strings.
+Example: SELECT * FROM Employees WHERE name LIKE 'A%';
+ OR
+SELECT * FROM Employees WHERE name LIKE '%n';
+
+4. What is BETWEEN used for?
+Answer: BETWEEN filters values within a range (inclusive of both ends).
+Example: SELECT * FROM Employees WHERE salary BETWEEN 30000 AND 60000;
+
+5. How do you limit output rows?
+Answer: Use LIMIT to restrict the number of rows returned.
+Example: SELECT * FROM Employees LIMIT 5;
+
+6. Difference between = and IN
+Answer:
+= checks for one specific value.
+IN checks for multiple values.
+Examples: SELECT * FROM Employees WHERE department = 'HR';
+OR
+SELECT * FROM Employees WHERE department IN ('HR', 'Sales');
+
+7. How to sort in descending order?
+Answer: Use ORDER BY column_name DESC.
+Example: SELECT * FROM Employees ORDER BY salary DESC;
+
+8. What is aliasing?
+Answer: Aliasing renames columns or tables temporarily using AS.
+Example: SELECT name AS Employee_Name, salary AS Monthly_Salary FROM Employees;
+
+9. Explain DISTINCT.
+Answer: DISTINCT removes duplicate values from the result set.
+Example: SELECT DISTINCT department FROM Employees;
+
+10. What is the default sort order?
+Answer: The default order is ascending (ASC).
+Example: SELECT * FROM Employees ORDER BY name;
+
+
+
+
+
+
+
+
