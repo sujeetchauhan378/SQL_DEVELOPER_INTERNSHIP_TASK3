@@ -1,0 +1,44 @@
+-- 1. SELECT all columns from a table
+SELECT * FROM Employees;
+
+-- 2. SELECT specific columns
+SELECT name, department, salary FROM Employees;
+
+-- 3. Filtering rows using WHERE clause
+SELECT * FROM Employees WHERE department = 'IT';
+
+-- 4. Combining conditions with AND
+SELECT * FROM Employees WHERE department = 'Sales' AND salary > 40000;
+
+-- 5. Combining conditions with OR
+SELECT * FROM Employees WHERE department = 'Marketing' OR department = 'HR';
+
+-- 6. LIKE operator: names starting with 'A'
+SELECT * FROM Employees WHERE name LIKE 'A%';
+
+-- 7. LIKE operator: names ending with 'n'
+SELECT * FROM Employees WHERE name LIKE '%n';
+
+-- 8. BETWEEN operator: salary between 30000 and 60000
+SELECT * FROM Employees WHERE salary BETWEEN 30000 AND 60000;
+
+-- 9. ORDER BY name (ascending)
+SELECT * FROM Employees ORDER BY name;
+
+-- 10. ORDER BY salary (descending)
+SELECT * FROM Employees ORDER BY salary DESC;
+
+-- 11. LIMIT the output to first 5 records
+SELECT * FROM Employees LIMIT 5;
+
+-- 12. DISTINCT departments
+SELECT DISTINCT department FROM Employees;
+
+-- 13. Column aliasing
+SELECT name AS Employee_Name, salary AS Monthly_Salary FROM Employees;
+
+-- 14. Using IN for filtering multiple values
+SELECT * FROM Employees WHERE department IN ('IT', 'Sales');
+
+-- 15. Using NOT IN
+SELECT * FROM Employees WHERE department NOT IN ('HR', 'Finance');
